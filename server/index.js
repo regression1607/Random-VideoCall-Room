@@ -10,7 +10,7 @@ app.use(express.json());
 const server = require('http').Server(app);
 const io = require('socket.io')(server, {
     cors: {
-      origin: "https://vercel.com/regression1607s-projects/random-video-call-room-client",
+      origin: "https://random-video-call-room-client.vercel.app",
       methods: ["GET", "POST"],
       allowedHeaders: ["my-custom-header"],
       credentials: true
