@@ -1,0 +1,12 @@
+@keyframes marquee {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-100%); }
+  }
+  
+  .marquee {
+    animation: marquee 20s linear infinite;
+  }
+  
+  .marquee:hover {
+    animation-play-state: paused;
+  }
