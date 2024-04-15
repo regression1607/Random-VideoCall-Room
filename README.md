@@ -13,14 +13,16 @@ To get started with Random Video Call Room, follow these steps:
 ### Client
 1. Navigate to the `client` directory: `cd client`
 2. Install dependencies: `npm install`
-3. Start the development server: `npm run dev`
-4. Access the client app at [http://localhost:3000](http://localhost:3000)
+3. Go to Client/index.js and chnage this link : [https://random-video-call-room-server.vercel.app](https://random-video-call-room-server.vercel.app) to [http://localhost:5000](http://localhost:5000)
+4. Start the development server: `npm run dev`
+5. Access the client app at [http://localhost:3000](http://localhost:3000)
 
 ### Server
 1. Navigate to the `server` directory: `cd server`
 2. Install dependencies: `npm install`
 3. Start the server: `npm run dev`
-4. The server will run on [http://localhost:5000](http://localhost:5000)
+4. Go to Server/index.js and chnage this link : [https://random-video-call-room-server.vercel.app](https://random-video-call-room-server.vercel.app) to [http://localhost:3000](http://localhost:3000)
+5. The server will run on [http://localhost:5000](http://localhost:5000)
 
 ## 🖼️ Screenshots
 ![Home Page](https://github.com/regression1607/Random-VideoCall-Room/raw/main/client/public/home.png)
