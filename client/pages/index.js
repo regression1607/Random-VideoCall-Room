@@ -5,7 +5,7 @@ import Header from './header';
 import CardGrid from './CardGrid';
 import LeftSide from './LeftSide';
 
-const socket = io('https://random-video-call-room-server.vercel.app');
+const socket = io('http://localhost:5000');
 let callFrame;
 
 export default function Home() {
@@ -20,7 +20,7 @@ export default function Home() {
   console.log('Saved key:', savedKey); // Log the saved key
 
   // Send a POST request to the server with the saved API and key
-  fetch('https://random-video-call-room-server.vercel.app/room', {
+  fetch('http://localhost:5000/room', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -40,7 +40,7 @@ export default function Home() {
   const joinRoom = () => {
     const savedApi = sessionStorage.getItem('api');
     console.log("savedApi",savedApi);
-    fetch(`https://random-video-call-room-server.vercel.app/room/${roomId}/join`)
+    fetch(`http://localhost:5000/room/${roomId}/join`)
       .then(response => response.json())
       .then(data => {
         if (data.success) {
